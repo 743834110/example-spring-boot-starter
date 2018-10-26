@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="handleMap" class="org.springframework.beans.factory.config.MapFactoryBean">
+        <property name="sourceMap">
+            <map  key-type="java.lang.String" value-type="java.lang.String">
+                <entry key="高达">
+                    <value>圣战</value>
+                </entry>
+            </map>
+        </property>
+        <property name="targetMapClass" value="java.util.HashMap"/>
+    </bean>
+</beans>
